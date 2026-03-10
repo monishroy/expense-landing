@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense — Your Private Finance Manager</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ══════════ NAV ══════════ -->
+  <!-- ══════════ HEADER (nav + hero) ══════════ -->
+  <header>
+
+    <!-- NAV -->
+    <nav id="nav">
+      <a href="#" class="nav-logo">
+        <img src="assets/logo.webp" alt="Expense">
+        <span class="logo-txt">Expen<em>se</em></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#screens">App Screens</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-r">
+        <div id="themeBtn"><i class='bx bx-moon'></i></div>
+        <a href="Expense.apk" download class="nav-dl">Download Free</a>
+      </div>
+      <div class="ham" id="ham"><span></span><span></span><span></span></div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mob" id="mob">
+      <a href="#features"><i class='bx bx-grid-alt'></i> Features</a>
+      <a href="#screens"><i class='bx bx-mobile-alt'></i> App Screens</a>
+      <a href="#how"><i class='bx bx-list-check'></i> How It Works</a>
+      <a href="#reviews"><i class='bx bx-star'></i> Reviews</a>
+      <a href="#faq"><i class='bx bx-help-circle'></i> FAQ</a>
+      <a href="Expense.apk" download style="color:var(--g);font-weight:900"><i class='bx bx-download'></i> Download
+        Free</a>
+    </div>
+
+    <!-- ══════════ HERO ══════════ -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <div class="hgrid"></div>
+        <div class="orb o1"></div>
+        <div class="orb o2"></div>
+      </div>
+
+      <div class="hero-inner sw">
+
+        <!-- LEFT: copy -->
+        <div class="hero-copy">
+          <div class="hero-badge"><i class='bx bx-lock-alt'></i> 100% Private · No Cloud</div>
+          <h1 class="h-title">Your Finances.<br><span class="ac">Only Yours.</span><br>Always Safe.</h1>
+          <p class="h-sub">Expense stores everything on your device — no servers, no breaches, no subscriptions.
+            PIN-protected, fully offline, beautifully smart.</p>
+          <div class="h-acts">
+            <a href="Expense.apk" download class="btn-fill"><i class='bx bx-download'></i> Download Free</a>
+            <a href="#features" class="btn-line"><i class='bx bx-play'></i> Explore Features</a>
+          </div>
+          <div class="h-trust">
+            <div class="trust-item"><i class='bx bx-lock-alt'></i> Local Storage Only</div>
+            <div class="trust-div"></div>
+            <div class="trust-item"><i class='bx bx-grid-small'></i> PIN Protected</div>
+            <div class="trust-div"></div>
+            <div class="trust-item"><i class='bx bx-wifi-off'></i> Works Offline</div>
+          </div>
+        </div>
+
+        <!-- RIGHT: real phone screenshot -->
+        <div class="hero-vis">
+
+          <!-- floating stat cards -->
+          <div class="fc fc1">
+            <div class="fc-t"><i class='bx bx-trending-up'></i> Saved This Month</div>
+            <div class="fc-v">+$340</div>
+          </div>
+          <div class="fc fc2">
+            <div class="fc-t"><i class='bx bx-wallet'></i> Budget Remaining</div>
+            <div class="fc-v">$1,240</div>
+          </div>
+
+          <!-- glow blob -->
+          <div class="ph-glow"></div>
+
+          <!-- phone shell -->
+          <div class="ph-shell">
+            <div class="ph-viewport">
+              <!-- dark screenshot -->
+              <img src="assets/screenshot/1-dark.jpg" alt="Expense App — Dark Mode" class="ph-img dark-img">
+              <!-- light screenshot -->
+              <img src="assets/screenshot/1-light.jpg" alt="Expense App — Light Mode" class="ph-img light-img">
+            </div>
+          </div>
+
+        </div><!-- /hero-vis -->
+      </div><!-- /hero-inner -->
+
+      <!-- scroll-down cue -->
+      <a href="#features" class="scroll-down" aria-label="Scroll down">
+        <span>Scroll</span>
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+      </a>
+
+    </section>
+
+  </header><!-- /header -->
+
+  <!-- ══════════ BRAND STRIP ══════════ -->
+  <div class="bstrip">
+    <div class="btrack">
+      <div class="bi"><i class='bx bx-server'></i> Zero Cloud Storage</div>
+      <div class="bi"><i class='bx bx-grid-small'></i> PIN Lock Security</div>
+      <div class="bi"><i class='bx bx-wallet'></i> Expense Tracking</div>
+      <div class="bi"><i class='bx bx-trending-up'></i> Income Manager</div>
+      <div class="bi"><i class='bx bx-transfer'></i> Debt Tracker</div>
+      <div class="bi"><i class='bx bx-bar-chart-alt-2'></i> Smart Analytics</div>
+      <div class="bi"><i class='bx bx-target-lock'></i> Budget Planner</div>
+      <div class="bi"><i class='bx bx-category'></i> Categories</div>
+      <div class="bi"><i class='bx bx-money'></i> Multi Currency</div>
+      <div class="bi"><i class='bx bx-moon'></i> Dark Mode</div>
+      <div class="bi"><i class='bx bx-history'></i> Full History</div>
+      <div class="bi"><i class='bx bx-file'></i> Reports</div>
+    </div>
+  </div>
+
+  <!-- ══════════ PRIVACY ══════════ -->
+  <section class="priv-sec" id="privacy">
+    <div class="sw">
+      <div class="priv-inner">
+        <div class="priv-visual-wrap reveal">
+          <div class="priv-stack">
+            <div class="pcard pc3"></div>
+            <div class="pcard pc2">
+              <div class="pc-ico"><i class='bx bx-shield-quarter'></i></div>
+              <div class="pc-title">All Data On Your Device</div>
+              <div class="pc-desc">No internet required. Your finances never leave your phone.</div>
+            </div>
+            <div class="pcard pc1">
+              <div class="pc-ico"><i class='bx bx-key'></i></div>
+              <div class="pc-title">PIN-Protected Access</div>
+              <div class="pc-desc">Set your secret PIN on first launch. Every session requires your PIN — no email, no
+                account, no recovery cloud. Just you and your code.</div>
+              <div class="ptags">
+                <div class="ptag">No Account</div>
+                <div class="ptag">No Cloud</div>
+                <div class="ptag">No Ads</div>
+                <div class="ptag">No Tracking</div>
+                <div class="ptag">Fully Offline</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal d2">
+          <div class="s-label">Privacy First</div>
+          <h2 class="s-title">Your data stays on<br>your device. <span style="color:var(--g)">Period.</span></h2>
+          <p class="s-sub" style="margin-bottom:28px">Unlike other finance apps that upload your data to the cloud,
+            Expense stores everything in your device's local storage. Zero server, zero breach risk, zero subscription.
+          </p>
+          <div class="priv-point">
+            <div class="priv-point-ico"><i class='bx bx-grid-small'></i></div>
+            <div>
+              <div class="priv-pt">PIN Setup on First Launch</div>
+              <div class="priv-pd">Choose your 4-digit PIN when you first open the app. Every future session requires it
+                — keeping strangers out even if your phone is unlocked.</div>
+            </div>
+          </div>
+          <div class="priv-point">
+            <div class="priv-point-ico"><i class='bx bx-data'></i></div>
+            <div>
+              <div class="priv-pt">Local Storage Only</div>
+              <div class="priv-pd">All transactions, budgets and categories are saved in your device's local storage.
+                Zero bytes are ever sent anywhere.</div>
+            </div>
+          </div>
+          <div class="priv-point">
+            <div class="priv-point-ico"><i class='bx bx-trash'></i></div>
+            <div>
+              <div class="priv-pt">One-Tap Data Clear</div>
+              <div class="priv-pd">Need a fresh start? Clear every record instantly from Settings. No support ticket, no
+                waiting — full control is yours.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FEATURES ══════════ -->
+  <section class="feat-sec" id="features">
+    <div class="sw">
+      <div class="feat-hdr reveal">
+        <div class="s-label">Features</div>
+        <h2 class="s-title">Everything your finances need,<br>nothing you don't</h2>
+        <p class="s-sub">12 powerful modules, one beautiful app — all working together, all stored privately on your
+          device.</p>
+      </div>
+      <div class="feat-grid">
+        <div class="feat-card reveal d1">
+          <div class="icon-box"><i class='bx bx-wallet'></i></div>
+          <div class="feat-name">Expense Tracking</div>
+          <p class="feat-txt">Log every purchase with amount, category, date and notes. See exactly where your money
+            goes with real-time totals and instant categorization.</p>
+        </div>
+        <div class="feat-card reveal d2">
+          <div class="icon-box"><i class='bx bx-trending-up'></i></div>
+          <div class="feat-name">Income Manager</div>
+          <p class="feat-txt">Record salaries, freelance income, dividends and any money you earn. Track multiple income
+            sources and see your net position at a glance.</p>
+        </div>
+        <div class="feat-card reveal d3">
+          <div class="icon-box"><i class='bx bx-transfer-alt'></i></div>
+          <div class="feat-name">Debt Tracker</div>
+          <p class="feat-txt">Manage money you owe and money owed to you. Set due dates, track repayments, and never
+            forget an outstanding balance again.</p>
+        </div>
+        <div class="feat-card reveal d4">
+          <div class="icon-box"><i class='bx bx-bar-chart-alt-2'></i></div>
+          <div class="feat-name">Smart Analysis</div>
+          <p class="feat-txt">Beautiful charts and spending breakdowns reveal patterns you never noticed. Weekly,
+            monthly and yearly views help you spot trends instantly.</p>
+        </div>
+        <div class="feat-card reveal d5">
+          <div class="icon-box"><i class='bx bx-file-blank'></i></div>
+          <div class="feat-name">Reports</div>
+          <p class="feat-txt">Generate detailed financial reports by date range, category or type. Income vs. expense
+            summaries, top spending categories and net worth over time.</p>
+        </div>
+        <div class="feat-card reveal d6">
+          <div class="icon-box"><i class='bx bx-target-lock'></i></div>
+          <div class="feat-name">Budget Planner</div>
+          <p class="feat-txt">Set monthly budgets per category. Get live progress bars and color alerts before you
+            overspend. Budgets reset automatically each month.</p>
+        </div>
+        <div class="feat-card reveal d1">
+          <div class="icon-box"><i class='bx bx-category-alt'></i></div>
+          <div class="feat-name">Custom Categories</div>
+          <p class="feat-txt">Create, rename, reorder and assign icons to unlimited categories. Organize your money the
+            way your life actually works — not some generic preset.</p>
+        </div>
+        <div class="feat-card reveal d2">
+          <div class="icon-box"><i class='bx bx-history'></i></div>
+          <div class="feat-name">Full History</div>
+          <p class="feat-txt">Every transaction ever logged is preserved locally. Filter, search and sort your complete
+            history by date, category, type or amount anytime.</p>
+        </div>
+        <div class="feat-card reveal d3">
+          <div class="icon-box"><i class='bx bx-dollar'></i></div>
+          <div class="feat-name">Currency Selection</div>
+          <p class="feat-txt">Choose from a full list of global currencies. Swap anytime from Settings — all existing
+            records update instantly to your chosen symbol.</p>
+        </div>
+        <div class="feat-card reveal d4">
+          <div class="icon-box"><i class='bx bx-moon'></i></div>
+          <div class="feat-name">Dark &amp; Light Mode</div>
+          <p class="feat-txt">Switch between a crisp light mode and a deep dark mode easy on the eyes at night. Your
+            preference is saved locally and remembered every time.</p>
+        </div>
+        <div class="feat-card reveal d5">
+          <div class="icon-box"><i class='bx bx-grid-small'></i></div>
+          <div class="feat-name">PIN Security</div>
+          <p class="feat-txt">Set a 4-digit PIN at first launch. Required every time you open the app. Change your PIN
+            anytime from Settings. This is your private vault.</p>
+        </div>
+        <div class="feat-card reveal d6">
+          <div class="icon-box"><i class='bx bx-shield'></i></div>
+          <div class="feat-name">Data Management</div>
+          <p class="feat-txt">Full control over your data. Clear individual records, entire categories, or reset
+            everything with one tap. Your data, your rules, your device only.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ METRICS ══════════ -->
+  <section class="metrics-sec">
+    <div class="sw">
+      <div class="mgrid reveal">
+        <div class="mi">
+          <div class="mn">500K+</div>
+          <div class="ml2">Downloads</div>
+        </div>
+        <div class="mi">
+          <div class="mn">4.9<i class='bx bxs-star' style="font-size:1.8rem;color:var(--g);vertical-align:middle"></i>
+          </div>
+          <div class="ml2">App Rating</div>
+        </div>
+        <div class="mi">
+          <div class="mn">0 bytes</div>
+          <div class="ml2">Sent to servers</div>
+        </div>
+        <div class="mi">
+          <div class="mn">100%</div>
+          <div class="ml2">Offline capable</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ APP SCREENS ══════════ -->
+  <section class="scr-sec" id="screens">
+    <div class="sw">
+      <div class="scr-hdr reveal">
+        <div class="s-label">App Screens</div>
+        <h2 class="s-title">Beautifully designed<br>for every moment</h2>
+        <p class="s-sub">Every screen adapts perfectly to light and dark mode. Toggle the theme button above to see the
+          live switch.</p>
+      </div>
+    </div>
+    <!-- Infinite auto-scroll strip -->
+    <div style="overflow-x:hidden">
+      <div class="scr-outer">
+        <div class="scr-track" id="strack">
+
+          <div class="sc dk"><img src="assets/screenshot/1-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/1-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/2-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/2-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/3-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/3-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/4-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/4-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/5-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/5-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/6-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/6-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/7-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/7-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/8-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/8-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/9-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/9-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/10-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/10-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/11-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/11-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/12-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/12-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/13-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/13-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+
+          <!-- Duplicate set for seamless infinite loop -->
+          <div class="sc dk"><img src="assets/screenshot/1-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/1-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/2-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/2-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/3-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/3-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/4-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/4-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/5-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/5-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/6-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/6-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/7-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/7-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/8-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/8-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/9-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/9-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/10-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/10-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/11-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/11-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/12-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/12-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+          <div class="sc dk"><img src="assets/screenshot/13-dark.jpg" alt="Expense App Screenshot" class="dark-img">
+          </div>
+          <div class="sc lt"><img src="assets/screenshot/13-light.jpg" alt="Expense App Screenshot" class="light-img">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ══════════ TESTIMONIALS ══════════ -->
+  <section class="testi-sec" id="reviews">
+    <div class="sw">
+      <div class="testi-hdr reveal">
+        <div class="s-label">Reviews</div>
+        <h2 class="s-title">Trusted by 500,000+ users</h2>
+        <p class="s-sub">Real words from real people who love that their financial data stays private.</p>
+      </div>
+      <div class="tgrid">
+        <div class="tc reveal d1">
+          <div class="stars"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+              class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+          <p class="ttx">"Finally a finance app that doesn't ask for my email. Set my PIN, started tracking instantly.
+            Saved $600 in the first month just by seeing my habits."</p>
+          <div class="tau">
+            <div class="tav" style="background:linear-gradient(135deg,#1FC062,#0a8c40)">SA</div>
+            <div>
+              <div class="tn">Sarah Anderson</div>
+              <div class="tr">Freelance Designer</div>
+            </div>
+          </div>
+        </div>
+        <div class="tc reveal d2">
+          <div class="stars"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+              class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+          <p class="ttx">"The PIN security is brilliant. I know nothing is uploaded anywhere. Total peace of mind — and
+            the dark mode looks stunning."</p>
+          <div class="tau">
+            <div class="tav" style="background:linear-gradient(135deg,#2563eb,#1d4ed8)">MK</div>
+            <div>
+              <div class="tn">Michael Kim</div>
+              <div class="tr">Software Engineer</div>
+            </div>
+          </div>
+        </div>
+        <div class="tc reveal d3">
+          <div class="stars"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+              class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+          <p class="ttx">"The debt tracker alone is worth it. I finally know who owes me what. Clean design, works
+            offline, and I control all my data."</p>
+          <div class="tau">
+            <div class="tav" style="background:linear-gradient(135deg,#7c3aed,#6d28d9)">LP</div>
+            <div>
+              <div class="tn">Laura Perez</div>
+              <div class="tr">Small Business Owner</div>
+            </div>
+          </div>
+        </div>
+        <div class="tc reveal d1">
+          <div class="stars"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+              class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+          <p class="ttx">"I travel for work and the multi-currency feature is essential. Switch in one tap. Works
+            offline on flights too — this app is a gem."</p>
+          <div class="tau">
+            <div class="tav" style="background:linear-gradient(135deg,#dc2626,#b91c1c)">JT</div>
+            <div>
+              <div class="tn">James Thompson</div>
+              <div class="tr">Business Consultant</div>
+            </div>
+          </div>
+        </div>
+        <div class="tc reveal d2">
+          <div class="stars"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+              class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+          <p class="ttx">"The clear data feature is underrated. Fresh start every month, no mess. And no one can ever
+            access my records. Exactly what I needed."</p>
+          <div class="tau">
+            <div class="tav" style="background:linear-gradient(135deg,#059669,#047857)">PN</div>
+            <div>
+              <div class="tn">Priya Nair</div>
+              <div class="tr">Startup Founder</div>
+            </div>
+          </div>
+        </div>
+        <div class="tc reveal d3">
+          <div class="stars"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+              class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+          <p class="ttx">"The reports section showed I was spending 40% on food. Cut it to 25% in two months. Pure data,
+            private data, real results."</p>
+          <div class="tau">
+            <div class="tav" style="background:linear-gradient(135deg,#d97706,#b45309)">DW</div>
+            <div>
+              <div class="tn">Daniel Wright</div>
+              <div class="tr">Graphic Artist</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FAQ ══════════ -->
+  <section class="faq-sec" id="faq">
+    <div class="sw">
+      <div class="faq-inner">
+        <div class="faq-left reveal">
+          <div class="s-label">FAQ</div>
+          <h2 class="s-title">Got questions?<br>We have answers.</h2>
+          <p class="s-sub" style="margin-bottom:16px">Can't find what you need? Email us at <a
+              href="mailto:hello@expenseapp.io"
+              style="color:var(--g);text-decoration:none;font-weight:800">hello@expenseapp.io</a></p>
+          <div class="priv-note">
+            <div class="priv-note-title"><i class='bx bx-shield-quarter'></i> Privacy Promise</div>
+            <div class="priv-note-txt">We collect zero data from you. The app runs entirely on your device. No
+              analytics, no crash reports, no usage tracking. What happens in Expense stays in Expense.</div>
+          </div>
+        </div>
+        <div class="flist reveal d2">
+          <div class="fi">
+            <div class="fq">Is my data really private?<div class="farr"><i class='bx bx-chevron-down'></i></div>
+            </div>
+            <div class="fa">Yes, absolutely. Expense uses your device's local storage exclusively. No data is ever sent
+              to any server. We don't have servers that could receive your data. Your financial records exist only on
+              your device.</div>
+          </div>
+          <div class="fi">
+            <div class="fq">What happens if I forget my PIN?<div class="farr"><i class='bx bx-chevron-down'></i></div>
+            </div>
+            <div class="fa">Since there's no cloud account, PIN recovery works by clearing app data and starting fresh.
+              This is by design — it means no one else can ever access your data either, even if they try to "recover"
+              it.</div>
+          </div>
+          <div class="fi">
+            <div class="fq">Can I use the app offline?<div class="farr"><i class='bx bx-chevron-down'></i></div>
+            </div>
+            <div class="fa">Expense works 100% offline. All features — tracking, budgets, reports, analysis — are fully
+              functional without any internet connection. It never needs to sync anything.</div>
+          </div>
+          <div class="fi">
+            <div class="fq">How do I clear all my data?<div class="farr"><i class='bx bx-chevron-down'></i></div>
+            </div>
+            <div class="fa">Go to Settings → Data Management → Clear All Data. This instantly removes every transaction,
+              budget and category from your device. The action is permanent. Your PIN is also reset so you can start
+              completely fresh.</div>
+          </div>
+          <div class="fi">
+            <div class="fq">How do I change my currency?<div class="farr"><i class='bx bx-chevron-down'></i></div>
+            </div>
+            <div class="fa">Go to Settings → Currency and select from the global currency list. Your choice is saved
+              locally and all amounts will display in your selected currency symbol going forward.</div>
+          </div>
+          <div class="fi">
+            <div class="fq">Is the app completely free?<div class="farr"><i class='bx bx-chevron-down'></i></div>
+            </div>
+            <div class="fa">Yes, Expense is completely free to download and use with no limitations. No premium tier, no
+              in-app purchases, no subscription. All 12 features are available from day one at no cost.</div>
+          </div>
+          <div class="fi">
+            <div class="fq">Can I change my PIN later?<div class="farr"><i class='bx bx-chevron-down'></i></div>
+            </div>
+            <div class="fa">Yes. Go to Settings → Security → Change PIN. Enter your current PIN first, then set your new
+              one. The change takes effect immediately on your next launch.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CTA ══════════ -->
+  <section class="cta-sec" id="download">
+    <div class="sw">
+      <div class="cta-box reveal">
+        <h2 class="cta-title">Your private finance tracker<br>is one tap <span style="color:var(--g)">away</span></h2>
+        <p class="cta-sub">Free forever. No account. No cloud. Just you and your money — locked behind your PIN on your
+          device.</p>
+        <div class="cta-btns">
+          <a href="Expense.apk" download class="sto">
+            <i class='bx bx-download sto-ico'></i>
+            <div><span class="sto-s">Download App</span></div>
+          </a>
+        </div>
+        <p class="cta-note">Free forever · No account required · 100% private · Works offline</p>
+        <div class="cta-trust">
+          <div class="ct-item"><i class='bx bx-shield-quarter'></i> Zero Data Collection</div>
+          <div class="ct-item"><i class='bx bx-grid-small'></i> PIN Protected</div>
+          <div class="ct-item"><i class='bx bx-wifi-off'></i> Works Offline</div>
+          <div class="ct-item"><i class='bx bx-trash'></i> One-Tap Clear</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer>
+    <div class="fi-in">
+      <div class="ftop">
+        <div class="fbrand">
+          <a href="#" class="nav-logo">
+            <img src="assets/logo.webp" alt="Expense" style="width:30px;height:30px;border-radius:8px">
+            <span class="logo-txt" style="font-size:1.1rem">Expen<em>se</em></span>
+          </a>
+          <p>The private, offline-first finance tracker. Your data lives on your device. Locked by your PIN. Seen only
+            by you.</p>
+        </div>
+        <div>
+          <div class="fct">Features</div>
+          <ul class="flinks">
+            <li><a href="#features"><i class='bx bx-wallet'></i> Expense Tracking</a></li>
+            <li><a href="#features"><i class='bx bx-trending-up'></i> Income Manager</a></li>
+            <li><a href="#features"><i class='bx bx-transfer'></i> Debt Tracker</a></li>
+            <li><a href="#features"><i class='bx bx-target-lock'></i> Budgets &amp; Reports</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="fct">App</div>
+          <ul class="flinks">
+            <li><a href="#screens"><i class='bx bx-mobile-alt'></i> App Screens</a></li>
+            <li><a href="#how"><i class='bx bx-list-check'></i> How It Works</a></li>
+            <li><a href="#reviews"><i class='bx bx-star'></i> Reviews</a></li>
+            <li><a href="#download"><i class='bx bx-download'></i> Download</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="fct">Support</div>
+          <ul class="flinks">
+            <li><a href="#faq"><i class='bx bx-help-circle'></i> FAQ</a></li>
+            <li><a href="#"><i class='bx bx-envelope'></i> Contact</a></li>
+            <li><a href="#"><i class='bx bx-lock'></i> Privacy Policy</a></li>
+            <li><a href="#"><i class='bx bx-file'></i> Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="fbot">
+        <p>© 2026 Expense App. All rights reserved. Your data never leaves your device.</p>
+        <div class="fsoc">
+          <a href="#" class="fsb"><i class='bx bxl-twitter'></i></a>
+          <a href="#" class="fsb"><i class='bx bxl-linkedin'></i></a>
+          <a href="#" class="fsb"><i class='bx bxl-instagram'></i></a>
+          <a href="#" class="fsb"><i class='bx bxl-youtube'></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
