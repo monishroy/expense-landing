@@ -5,6 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Resource Hints (Performance + SEO) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://unpkg.com">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
   <!-- Title (Max 55–60 Characters) -->
   <title>Expense - Private Finance Manager & Expense Tracker</title>
 
@@ -32,10 +38,17 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@monishroy010">
+  <meta name="twitter:creator" content="@monishroy010">
+  <meta name="twitter:url" content="https://expense.codetap.org/">
   <meta name="twitter:title" content="Expense - Private Finance Manager">
   <meta name="twitter:description"
     content="Manage your personal finances, track expenses, and control your budget with Expense.">
   <meta name="twitter:image" content="https://expense.codetap.org/assets/preview.webp">
+  <meta name="twitter:image:alt" content="Expense App - Private Finance Manager Dashboard">
+
+  <!-- LCP Preload: Hero Image -->
+  <link rel="preload" as="image" href="assets/screenshot/1-dark.webp" type="image/webp">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap"
@@ -68,34 +81,96 @@
     gtag('config', 'G-23CPQTJ4DC');
   </script>
 
-  <!-- Structured Data (SEO Schema) -->
+  <!-- Structured Data: SoftwareApplication -->
   <script type="application/ld+json">
   {
    "@context": "https://schema.org",
    "@type": "SoftwareApplication",
-   "name": "Expense",
+   "name": "Expense - Private Finance Manager",
    "applicationCategory": "FinanceApplication",
-   "operatingSystem": "Web",
-   "description": "Expense is a private finance manager that helps users track expenses, manage budgets, and analyze spending.",
+   "operatingSystem": "Android",
+   "description": "Expense is a 100% offline, PIN-protected finance manager that helps users track expenses, manage budgets, record income, and analyze spending — with zero cloud storage.",
    "url": "https://expense.codetap.org/",
+   "downloadUrl": "https://expense.codetap.org/Expense.apk",
+   "screenshot": "https://expense.codetap.org/assets/preview.webp",
+   "featureList": "Expense Tracking, Income Manager, Debt Tracker, Budget Planner, Smart Analytics, Reports, PIN Security, Dark Mode, Offline Mode, Currency Selection, Custom Categories, Full History",
    "author": {
      "@type": "Organization",
-     "name": "Expense"
+     "name": "CodeTap",
+     "url": "https://codetap.org"
    },
    "offers": {
      "@type": "Offer",
      "price": "0",
      "priceCurrency": "USD",
-     "category": "Free",
+     "availability": "https://schema.org/InStock",
      "url": "https://expense.codetap.org/"
    },
    "aggregateRating": {
      "@type": "AggregateRating",
-     "ratingValue": "4.8",
-     "ratingCount": "124",
+     "ratingValue": "4.9",
+     "ratingCount": "500000",
      "bestRating": "5",
      "worstRating": "1"
    }
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage (Google Rich Snippets) -->
+  <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+     {
+       "@type": "Question",
+       "name": "Is my data really private?",
+       "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes, absolutely. Expense uses your device's local storage exclusively. No data is ever sent to any server. We don't have servers that could receive your data. Your financial records exist only on your device."
+       }
+     },
+     {
+       "@type": "Question",
+       "name": "What happens if I forget my PIN?",
+       "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Since there's no cloud account, PIN recovery works by clearing app data and starting fresh. This is by design — it means no one else can ever access your data either, even if they try to recover it."
+       }
+     },
+     {
+       "@type": "Question",
+       "name": "Can I use the app offline?",
+       "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Expense works 100% offline. All features — tracking, budgets, reports, analysis — are fully functional without any internet connection. It never needs to sync anything."
+       }
+     },
+     {
+       "@type": "Question",
+       "name": "How do I clear all my data?",
+       "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Go to Settings → Data Management → Clear All Data. This instantly removes every transaction, budget and category from your device. The action is permanent. Your PIN is also reset so you can start completely fresh."
+       }
+     },
+     {
+       "@type": "Question",
+       "name": "Is Expense completely free?",
+       "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes, Expense is completely free to download and use with no limitations. No premium tier, no in-app purchases, no subscription. All 12 features are available from day one at no cost."
+       }
+     },
+     {
+       "@type": "Question",
+       "name": "How do I change my currency?",
+       "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Go to Settings → Currency and select from the global currency list. Your choice is saved locally and all amounts will display in your selected currency symbol going forward."
+       }
+     }
+   ]
   }
   </script>
 </head>

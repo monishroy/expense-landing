@@ -1,8 +1,8 @@
 $(function () {
 
     /* ── Theme ── */
-    var sys = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-    var theme = localStorage.getItem('exp-theme') || sys;
+    // Default to dark mode on first visit (ignore OS preference)
+    var theme = localStorage.getItem('exp-theme') || 'dark';
     applyTheme(theme);
 
     $('#themeBtn').on('click', function () {
