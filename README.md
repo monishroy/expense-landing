@@ -76,7 +76,7 @@ Expense is free software. See the app for any licensing details.
 
 - Website: [https://expense.codetap.org/](https://expense.codetap.org/)
 - Twitter: [@monishroy010](https://twitter.com/monishroy010)
-- Author: CodeTap
+- Author: Monish Roy
 
 ---
 
